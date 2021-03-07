@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    background-image: url('images/medium.jpg');
+    font-family: "Montserrat", sans-serif;
+    /* background-image: url('images/medium.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
 }
 
 ul.topnav {
@@ -44,4 +45,33 @@ ul.topnav li a:active {
     ul.topnav li {
         float: none;
     }
+}
+
+.homepage {
+    height: 587px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+img.home-image {
+    max-height: 100%;
+    width: 100%;
+}
+
+.home-content {
+    position: absolute;
+    top: 140px;
+    right: 140px;
+}
+
+h2.home-heading {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p.paragraph-content {
+    font-size: 15px;
+    font-weight: 600;
 }
