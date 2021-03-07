@@ -2,22 +2,19 @@ body {
     margin: 0;
 }
 
-ul {
+ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
-li {
+ul.topnav li {
     float: left;
 }
 
-li a {
+ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
@@ -28,10 +25,19 @@ li a {
 
 /*Change link color when you hover*/
 
-li a:hover {
+ul.topnav li a:hover:not(.active) {
     background-color: cadetblue;
 }
 
-.active {
-    background-color: cadetblue;
+ul.topnav li a:active {
+    background-color: blue;
+}
+
+
+/*Make the navbar responsive*/
+
+@media screen and (max-width:600px) {
+    ul.topnav li {
+        float: none;
+    }
 }
